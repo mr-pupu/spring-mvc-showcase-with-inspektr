@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	
-	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+
+    <aop:aspectj-autoproxy/>
+
+    <bean id="simpleService" class="org.springframework.samples.mvc.simple.DefaultSimpleService"/>
+
+
+    <!-- Audit Trail Resolvers -->
+    <bean id="defaultActionResolver" class="com.github.inspektr.audit.spi.support.DefaultAuditActionResolver">
+        <constructor-arg index="0" value="_SUCCEEDED"/>
+        <constructor-arg index="1" value="_FAILED"/>
+    </bean>
+
+    <bean id="anonymousPrincipalResolver"
+          class="org.springframework.samples.mvc.audit.AnonymousPrincipalResolver"/>
+
+    <!-- AuditTrailManagers -->
+    <bean id="auditTrailManager" class="com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager"/>
+
+    <!-- Main Audit Aspect -->
+    <bean id="auditTrailManagementAspect" class="com.github.inspektr.audit.AuditTrailManagementAspect">
+        <!-- String applicationCode -->
+        <constructor-arg index="0" value="SPRING_MVC_SHOWCASE"/>
+
+        <!-- PrincipalResolver -->
+        <constructor-arg index="1" ref="anonymousPrincipalResolver"/>
+
+        <!-- List<AuditTrailManager> auditTrailManagers -->
+        <constructor-arg index="2">
+            <list>
+                <ref bean="auditTrailManager"/>
+            </list>
+        </constructor-arg>
+
+        <!-- Map<String,AuditActionResolver> auditActionResolverMap -->
+        <constructor-arg index="3">
+            <map>
+                <entry key="DEFAULT_ACTION_RESOLVER">
+                    <ref local="defaultActionResolver"/>
+                </entry>
+            </map>
+        </constructor-arg>
+
+        <!-- Map<String,AuditResourceResolver> auditResourceResolverMap -->
+        <constructor-arg index="4">
+            <map>
+                <entry key="DEFAULT_RESOURCE_RESOLVER">
+                    <bean class="com.github.inspektr.audit.spi.support.ReturnValueAsStringResourceResolver"/>
+                </entry>
+            </map>
+        </constructor-arg>
+    </bean>
+
 </beans>

@@ -12,33 +12,37 @@
 	
 	<!-- Application Loggers -->
 	<logger name="org.springframework.samples.mvc">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 	
 	<logger name="org.springframework.beans">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 	
 	<logger name="org.springframework.context">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 
 	<logger name="org.springframework.http">
+		<level value="warn" />
+	</logger>
+
+	<logger name="org.springframework.aop">
 		<level value="debug" />
 	</logger>
 
-	<logger name="org.springframework.web">
-		<level value="debug" />
-	</logger>
+    <logger name="com.github.inspektr">
+        <level value="INFO"/>
+    </logger>
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="warn" />
+		<priority value="debug" />
 		<appender-ref ref="console" />
 	</root>
 	

@@ -4,4 +4,5 @@ target
 .classpath
 .project
 .settings
+*.iws
 src/main/webapp/META-INF
