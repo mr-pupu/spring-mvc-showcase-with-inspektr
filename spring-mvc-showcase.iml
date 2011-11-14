@@ -57,10 +57,10 @@
     <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
-    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-audit:1.0.5.GA" level="project" />
-    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-common:1.0.5.GA" level="project" />
-    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-support-spring:1.0.5.GA" level="project" />
-    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-error:1.0.5.GA" level="project" />
+    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-audit:1.0.6.GA-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-common:1.0.6.GA-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-support-spring:1.0.6.GA-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.github.inspektr:inspektr-error:1.0.6.GA-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.0.5.RELEASE" level="project" />
   </component>

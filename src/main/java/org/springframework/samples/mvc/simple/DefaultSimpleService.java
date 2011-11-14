@@ -1,7 +1,6 @@
 package org.springframework.samples.mvc.simple;
 
 import com.github.inspektr.audit.annotation.Audit;
-import org.springframework.stereotype.Service;
 
 /**
  * For testing Inspektr
@@ -14,7 +13,7 @@ public class DefaultSimpleService  implements SimpleService {
     @Audit(
         action="SIMPLE_ACTION",
         actionResolverName="DEFAULT_ACTION_RESOLVER",
-        resourceResolverName="DEFAULT_RESOURCE_RESOLVER")
+        resourceResolverName="DEFAULT_RESOURCE_RESOLVER_XX")
     public String getSomeStringValue() {
         return "Well, here is some simple value";
     }

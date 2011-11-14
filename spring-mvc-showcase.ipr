@@ -48,10 +48,10 @@
             <element id="library" level="project" name="Maven: joda-time:joda-time:1.6.2" />
             <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
             <element id="library" level="project" name="Maven: commons-io:commons-io:2.0.1" />
-            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-audit:1.0.5.GA" />
-            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-common:1.0.5.GA" />
-            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-support-spring:1.0.5.GA" />
-            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-error:1.0.5.GA" />
+            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-audit:1.0.6.GA-SNAPSHOT" />
+            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-common:1.0.6.GA-SNAPSHOT" />
+            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-support-spring:1.0.6.GA-SNAPSHOT" />
+            <element id="library" level="project" name="Maven: com.github.inspektr:inspektr-error:1.0.6.GA-SNAPSHOT" />
             <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.5.RELEASE" />
           </element>
@@ -145,48 +145,52 @@
         <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.github.inspektr:inspektr-audit:1.0.5.GA">
+    <library name="Maven: com.github.inspektr:inspektr-audit:1.0.6.GA-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.5.GA/inspektr-audit-1.0.5.GA.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.6.GA-SNAPSHOT/inspektr-audit-1.0.6.GA-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.5.GA/inspektr-audit-1.0.5.GA-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.6.GA-SNAPSHOT/inspektr-audit-1.0.6.GA-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.5.GA/inspektr-audit-1.0.5.GA-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-audit/1.0.6.GA-SNAPSHOT/inspektr-audit-1.0.6.GA-SNAPSHOT-sources.jar!/" />
+        <root url="file://$PROJECT_DIR$/../inspektr/inspektr-audit/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../inspektr/inspektr-common/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../inspektr/inspektr-support-spring/src/main/java" />
+        <root url="file://$PROJECT_DIR$/../inspektr/inspektr-error/src/main/java" />
       </SOURCES>
     </library>
-    <library name="Maven: com.github.inspektr:inspektr-common:1.0.5.GA">
+    <library name="Maven: com.github.inspektr:inspektr-common:1.0.6.GA-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.5.GA/inspektr-common-1.0.5.GA.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.6.GA-SNAPSHOT/inspektr-common-1.0.6.GA-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.5.GA/inspektr-common-1.0.5.GA-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.6.GA-SNAPSHOT/inspektr-common-1.0.6.GA-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.5.GA/inspektr-common-1.0.5.GA-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-common/1.0.6.GA-SNAPSHOT/inspektr-common-1.0.6.GA-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.github.inspektr:inspektr-error:1.0.5.GA">
+    <library name="Maven: com.github.inspektr:inspektr-error:1.0.6.GA-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.5.GA/inspektr-error-1.0.5.GA.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.6.GA-SNAPSHOT/inspektr-error-1.0.6.GA-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.5.GA/inspektr-error-1.0.5.GA-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.6.GA-SNAPSHOT/inspektr-error-1.0.6.GA-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.5.GA/inspektr-error-1.0.5.GA-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-error/1.0.6.GA-SNAPSHOT/inspektr-error-1.0.6.GA-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.github.inspektr:inspektr-support-spring:1.0.5.GA">
+    <library name="Maven: com.github.inspektr:inspektr-support-spring:1.0.6.GA-SNAPSHOT">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.5.GA/inspektr-support-spring-1.0.5.GA.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.6.GA-SNAPSHOT/inspektr-support-spring-1.0.6.GA-SNAPSHOT.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.5.GA/inspektr-support-spring-1.0.5.GA-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.6.GA-SNAPSHOT/inspektr-support-spring-1.0.6.GA-SNAPSHOT-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.5.GA/inspektr-support-spring-1.0.5.GA-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/inspektr/inspektr-support-spring/1.0.6.GA-SNAPSHOT/inspektr-support-spring-1.0.6.GA-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
