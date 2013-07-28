@@ -6,3 +6,4 @@ target
 .settings
 *.iws
 src/main/webapp/META-INF
+.idea
